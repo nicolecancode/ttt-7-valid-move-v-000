@@ -1,4 +1,4 @@
-def valid_move?(board, position_taken?)
+def valid_move?(board, position_taken)
 
   if position_taken.between?(0,8) != true && position_taken?(board, index_number) == nil
     false
@@ -8,8 +8,8 @@ def valid_move?(board, position_taken?)
 end
 
 
-def position_taken?(board, index_number)
-  if board[index_number] == " " || board[index_number] == "" || board[index_number] == nil
+def position_taken?(board, index)
+  if board[index] == " " || board[index] == "" || board[index] == nil
     false
   else
     true
