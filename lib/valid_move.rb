@@ -1,4 +1,4 @@
-def valid_move?(board, position_taken)
+def valid_move?(board, index)
 
   if position_taken.between?(0,8) != true && position_taken?(board, index_number) == nil
     false
