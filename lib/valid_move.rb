@@ -6,3 +6,13 @@ def valid_move?(board, position_taken)
     true
   end
 end
+
+
+def position_taken?(board, index)
+  if board[index_number] == " " || board[index_number] == "" || board[index_number] == nil
+    false 
+  else
+    true
+  end
+end
+
